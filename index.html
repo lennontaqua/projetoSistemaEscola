@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cadastro de Aluno
+    </title>
+</head>
+<body>
+    <h1>
+        Cadastro de Aluno
+    </h1>
+
+    <form action="enviar.php" method="post">
+        <label for="tNome">
+            Nome:
+        </label>
+        <br/>
+        <input type="text" name="txtNome" id="tNome" size="100" maxlength="100"
+               placeholder="Digite o Nome" required>
+        <br/>
+        <br/>
+
+        <label for="tEmail">
+            Email:
+        </label>
+        <br/>
+        <input type="email" name="txtEmail" id="tEmail" size="100" maxlength="100"
+               placeholder="Digite o Email" required>
+        <br/>  
+        <br/>
+
+        <label for="tCpf">
+            C.P.F.:
+        </label>
+        <br/>
+        <input type="text" name="txtCpf" id="tCpf" size="20" maxlength="20"
+               placeholder="Digite o C.P.F." required>
+        <br/>
+        <br/>
+                  
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Cancelar">
+    </form>
+</body>
+</html>
