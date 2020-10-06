@@ -6,19 +6,25 @@
     <title>
         Cadastro de Aluno
     </title>
+
+    <?php
+        $nome=$_POST['txtNome'];
+        $email=$_POST['txtEmail'];
+        $cpf=$_POST['txtCpf'];
+        ?>
+
 </head>
 <body>
     <h1>
         Cadastro de Aluno
     </h1>
 
-    <form action="enviar.php" method="POST">
+    <form action="enviar.php" method="post">
         <label for="tNome">
             Nome:
         </label>
         <br/>
-        <input type="text" name="txtNome" id="tNome" size="100" maxlength="100"
-               placeholder="Digite o Nome" required>
+        <input <?php echo "value='$nome'";?> disabled>
         <br/>
         <br/>
 
@@ -26,8 +32,7 @@
             Email:
         </label>
         <br/>
-        <input type="email" name="txtEmail" id="tEmail" size="100" maxlength="100"
-               placeholder="Digite o Email" required>
+            <input <?php echo "value='$email'";?> disabled>
         <br/>  
         <br/>
 
@@ -35,13 +40,11 @@
             C.P.F.:
         </label>
         <br/>
-        <input type="text" name="txtCpf" id="tCpf" size="20" maxlength="20"
-               placeholder="Digite o C.P.F." required>
+            <input <?php echo "value='$cpf'";?> disabled>
         <br/>
         <br/>
                   
-        <input type="submit" value="Enviar"/>
-        <input type="reset" value="Cancelar">
+        <button ><a href="index.html">VOLTAR</a></button>
     </form>
 </body>
 </html>
